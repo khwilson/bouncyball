@@ -1,28 +1,28 @@
-<!doctype html5>
+<!doctype html>
 <html>
   <head>
     <title>The Game of Pong</title>
     <script type="text/javascript">
       // Time in milliseconds before next refresh
-      var REFRESH_TIME = 10;
+      const REFRESH_TIME = 10;
 
       // Width and height of canvas
-      var CANVAS_WIDTH = 500;
-      var CANVAS_HEIGHT = 300;
+      const CANVAS_WIDTH = 500;
+      const CANVAS_HEIGHT = 300;
 
       // Radius of the ball
-      var BALL_RADIUS = 10;
+      const BALL_RADIUS = 10;
 
       // Color of the ball
-      var BALL_COLOR = "#ff00ff";
+      const BALL_COLOR = "#ff00ff";
 
       // The x and y position of the ball. Start in the center
-      var ballX = CANVAS_WIDTH / 2;
-      var ballY = CANVAS_HEIGHT / 2;
+      let ballX = CANVAS_WIDTH / 2;
+      let ballY = CANVAS_HEIGHT / 2;
 
       // The current speed of the ball
-      var dx = 2;
-      var dy = 5;
+      let dx = 2;
+      let dy = 5;
 
       /**
        * This function takes a 2d canvas context and draws a ball on it at ballX and ballY
